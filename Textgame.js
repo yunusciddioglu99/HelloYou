@@ -3,11 +3,12 @@ var readlinesync = require('readline-sync');
 console.log("Hello, My name is Yunus Ciddioglu and this is my text game in js. Please enjoy.")
 var start = readlinesync.question("Please press 1 to begin")
 if (start==1){
-    question1()
+    GameRetry();
 }
 
 
 function GameRetry(){
+    question1();
     
     function question1(){     /////////   QUESTION  1 
     console.log("You find yourself suddenly transported to a mysterious isekai realm. As you look around, the air is filled with magical energy, and the path splits before you. Which way do you choose")
@@ -24,7 +25,6 @@ else{
     question1();
 
 }
-
 }
 
 
